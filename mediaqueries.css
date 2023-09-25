@@ -6,4 +6,13 @@
   #hamburger-nav {
     display: flex;
   }
+
+  .about-details-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-container {
+    display: block;
+  }
 }

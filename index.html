@@ -1,75 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grace Nicole Arquiza</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Grace Nicole</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contacts</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Grace Nicole</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Grace Nicole</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Grace Nicole</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
+      <div class="menu-links">
+        <ul>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pimg1">
+    <div class="ptext2">
+      <marquee behavior="alternate"><strong>BE YOUR OWN HERO</strong></marquee>
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <div class="section__text">
+      <p>Hello I Am</p>
+      <h2>Grace Nicole M. Arquiza</h2>
+      <strong>Frontend Developer</strong>
+
+    </div>
+    <img src="assets/picture.png" class="centered-image" alt="Photo of Me" />
+    <div class="btn-container">
+      <button class="btn btn-color-2" onclick="window.open('./assets/myCV.pdf')">
+        Download CV
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+        Contact Info
+      </button>
+      <div id="socials-container">
+        <img src="./assets/linkedin-icon.png" alt="My LinkedIn" class="icon"
+          onclick="location.href='https:/www.linkedin.com/in/grace-nicole-arquiza-b59bb6291/'" />
+        <img src="./assets/github-icon.png" alt="My Github" class="icon"
+          onclick="location.href='https:/github.com/garquiza'" />
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'" />
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <p>Learn More</p>
+      <span class="border1">
+        <strong>ABOUT ME</strong>
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark" id="about">
+
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/picture1.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h2>Experience</h2>
+            <p>3+ years <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h2>Education</h2>
+            <p>Bachelor of Science in Information System</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am currently a third-year college student pursuing a Bachelor of Science in Information Systems at the
+            Technological
+            University of the Philippines. I have a background in Frontend Development and Computer System Servicing. My
+            strong
+            preference lies in Hardware and Web Development, as it aligns more closely with my interests compared to
+            Software
+            Development."
+          </p>
         </div>
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/picture1.png" alt="Profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello I am</p>
-        <h1 class="title">Grace Nicole Arquiza</h1>
-        <p class="section__text__p2">College Student at TUP</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/myCV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-          <div id="socials-container">
-            <img
-              src="./assets/linkedin-icon.png"
-              alt="My LinkedIn"
-              class="icon"
-              onclick="location.href='https://linkedin.com'"
-            />
-            <img
-              src="./assets/github-icon.png"
-              alt="My Github"
-              class="icon"
-              onclick="location.href='https://github.com'"
-            />
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <p>Explore My</p>
+      <span class="border1">
+        <strong>EXPERIENCE</strong>
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark" id="experience">
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Responsive Design</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Computer System Servicing</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Hardware Troubleshooting</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Networking</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Hardware Installation</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-    </section>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+
+  <div class="pimg4">
+    <div class="ptext">
+      <p>Check Past</p>
+      <span class="border1">
+        <strong>PROJECTS</strong>
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light" id="projects">
+
+    <img src="assets/project1.PNG" style="width:400px;height:400px" alt="Project 1">
+    <img src="assets/project2.PNG" style="width:600px;height:400px" alt="Project 2">
+    <img src="assets/project3.PNG" style="width:600px;height:400px" alt="Project 3">
+    <img src="assets/project4.PNG" style="width:500px;height:400px" alt="Project 4">
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <div class="pimg5">
+    <div class="ptext">
+      <span class="border1">
+        <strong>CONTACT ME</strong>
+      </span>
+      <p>FOR MORE INFO</p>
+    </div>
+  </div>
+
+  <section class="section section-dark" id="contact">
+  </section>
+
+  <div class="pimg1">
+    <div class="ptext1">
+      <span class="border">
+        <strong>"IT'S NOT WHO I AM UNDERNEATH,BUT WHAT I DO THAT DEFINES ME"</strong>
+      </span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>

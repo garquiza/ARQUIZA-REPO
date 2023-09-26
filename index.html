@@ -8,7 +8,8 @@
   <title>My Portfolio</title>
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="media.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
 
 <body>
@@ -90,14 +91,16 @@
       <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <img src="./assets/experience.png" alt="Experience icon" class="icon"
+              onclick="location.href='./#experience'" />
             <h2>Experience</h2>
-            <p>3+ years <br />Frontend Development</p>
+            <p>Learned Computer System Servicing in 10th grade.</p>
+            <p>Studying Frontend Development for a year.</p>
           </div>
           <div class="details-container">
             <img src="./assets/education.png" alt="Education icon" class="icon" />
             <h2>Education</h2>
-            <p>Bachelor of Science in Information System</p>
+            <p>Bachelor of Science in Information System <br><br>At Technological University of the Philippines</p>
           </div>
         </div>
         <div class="text-container">
@@ -118,7 +121,7 @@
 
   <div class="pimg3">
     <div class="ptext">
-      <p>Explore My</p>
+      <p>Explore My Skills</p>
       <span class="border1">
         <strong>EXPERIENCE</strong>
       </span>
@@ -203,11 +206,44 @@
   </div>
 
   <section class="section section-light" id="projects">
+    <div class="project-card">
+      <img src="assets/project1.PNG" alt="Project 1">
+      <h3>Cryptography - Reciprocal of Letters</h3>
+      <p>A python program about implementing cryptography algorithm implementation with GUI.</p>
+      <div class="project-buttons">
+        <a href="https://github.com/garquiza/Cryptography-GUI-Implementation">GitHub</a>
+      </div>
+    </div>
 
-    <img src="assets/project1.PNG" style="width:400px;height:400px" alt="Project 1">
-    <img src="assets/project2.PNG" style="width:600px;height:400px" alt="Project 2">
-    <img src="assets/project3.PNG" style="width:600px;height:400px" alt="Project 3">
-    <img src="assets/project4.PNG" style="width:500px;height:400px" alt="Project 4">
+    <div class="project-card">
+      <img src="assets/project2.PNG" alt="Project 2">
+      <h3>ATM Simulation - ProgBank</h3>
+      <p>ATM Simulation C Program with Registration and Transaction Modules.</p>
+      <div class="project-buttons">
+        <a href="https://github.com/garquiza/ATM-Simulation-">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/project3.PNG" alt="Project 3">
+      <h3>Game - Gravity Zero</h3>
+      <p>An asteroid space game created using the C language with Raylib library.</p>
+      <div class="project-buttons">
+        <a href="https://github.com/garquiza/Gravity-Zero">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/project4.PNG" alt="Project 4">
+      <h3>Website - Serve2CleanPH</h3>
+      <p>I was tasked with handling the booking functionality <br>for a Cleaning Services Website developed by a group
+        of
+        five
+        members.</p>
+      <div class="project-buttons">
+        <a href="https://github.com/garquiza/Cleaning-Services-Website">GitHub</a>
+      </div>
+    </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section>
 
@@ -221,15 +257,62 @@
   </div>
 
   <section class="section section-dark" id="contact">
+    <div class="contact-container">
+      <h2>☺ Kindly Fill Out Form ☺</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-media-links">
+        <img src="/assets/email-icon.png" alt="Email" class="email-icon"
+          onclick="location.href='https:/www.gmail.com'" />
+        <p>Garquiza05@gmail.com</p>
+        <img src="/assets/facebook-icon.png" alt="Facebook" class="facebook-icon"
+          onclick="location.href='https:/www.facebook.com/defr0sch/'" />
+        <p>Grace Arquiza</p>
+      </div>
   </section>
 
   <div class="pimg1">
     <div class="ptext1">
       <span class="border">
-        <strong>"IT'S NOT WHO I AM UNDERNEATH,BUT WHAT I DO THAT DEFINES ME"</strong>
+        <strong>"IT IS NOT WHO I AM UNDERNEATH, BUT WHAT I DO THAT DEFINES ME"</strong>
       </span>
     </div>
   </div>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-content">
+      <div class="footer-icons">
+        <a href="https:/www.facebook.com/defr0sch/" class="footer-icon"><i class="fab fa-facebook"></i></a>
+        <a href="https:/www.linkedin.com/in/grace-nicole-arquiza-b59bb6291/" class="footer-icon"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="https:/github.com/garquiza" class="footer-icon"><i class="fab fa-github"></i></a>
+      </div>
+      <p>© Copyright 2023, Grace Nicole M. Arquiza. All Rights Reserved.</p>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 

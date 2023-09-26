@@ -16,3 +16,22 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
+  }
+
+  footer .nav-links li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .footer-icon {
+    font-size: 30px;
+  }
+}

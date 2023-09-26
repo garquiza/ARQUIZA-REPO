@@ -6,8 +6,11 @@ html {
   font-size: 16px;
   font-family: "Lato", sans-serif;
   line-height: 2em;
-  color: white;
+  color: whitesmoke;
+  scroll-behavior: smooth;
 }
+
+
 
 nav {
   background-color: #333;
@@ -24,30 +27,30 @@ nav,
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 8vh;
+  height: 80px;
 }
 
 .nav-links {
-  gap: 2rem;
+  gap: 2.5rem;
   list-style: none;
-  font-size: 1.8rem;
+  font-size: 30px;
 }
 
 a {
-  color: white;
+  color: whitesmoke;
   text-decoration: none;
 }
 
 a:hover {
   background-color: #535353;
-  color: #fff;
+  color: whitesmoke;
   padding: 5px 5px;
   border-radius: 10%;
 }
 
 .logo {
-  font-size: 2rem;
-  color: white;
+  font-size: 35px;
+  color: whitesmoke;
 }
 
 .logo:hover {
@@ -78,7 +81,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: whitesmoke;
   transition: all 0.3 ease-in-out;
 }
 
@@ -98,7 +101,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 25px;
   color: white;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
@@ -195,6 +198,78 @@ a:hover {
   min-height: 300px;
 }
 
+/* SECTION */
+.section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section__text {
+  line-height: 0.5em;
+  font-size: 20px;
+}
+
+.section-light {
+  background-color: #404040;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.ptext1 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+}
+
+.ptext .border {
+  background-color: black;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+.ptext .border1 {
+  border-style: solid;
+  background-color: #800000;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+.ptext .border.trans {
+  background-color: transparent;
+}
 
 /* PROFILE SECTION */
 .centered-image {
@@ -232,7 +307,7 @@ a:hover {
 }
 
 .btn-color-1:hover {
-  background: white;
+  background: whitesmoke;
 }
 
 .btn-color-2 {
@@ -241,7 +316,7 @@ a:hover {
 }
 
 .btn-color-2:hover {
-  background: white;
+  background: whitesmoke;
 }
 
 /* STYLE SOCIAL ICONS */
@@ -254,7 +329,7 @@ a:hover {
   height: 60px;
   margin: 0 10px;
   cursor: pointer;
-  color: white;
+  filter: invert(1);
 }
 
 /* HOVER ICON EFFECT */
@@ -295,7 +370,7 @@ a:hover {
 }
 
 .about-details-container p {
-  font-size: 1.8vh;
+  font-size: 20px;
 }
 
 .about-containers {
@@ -309,7 +384,7 @@ a:hover {
 .details-container {
   flex: 1;
   text-align: center;
-  border: 3px solid #ccc;
+  border: 3px solid whitesmoke;
   border-radius: 50px;
   padding: 10px;
   line-height: 1.5em;
@@ -322,84 +397,165 @@ a:hover {
   line-height: 0;
 }
 
+article .icon {
+  cursor: default;
+  filter: invert(1);
+}
+
 .experience-sub-title {
-  color: white;
+  color: whitesmoke;
 }
 
 /* PROJECTS */
+#projects {
+  display: grid;
+  gap: 0.8rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.project-card {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.project-card p {
+  font-size: 15px;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.project-buttons {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.project-buttons {
+  border: 3px solid whitesmoke;
+  padding: 5px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 /* CONTACT */
-
-/* SECTION */
-.section {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.section__text {
-  line-height: 0.5em;
-  font-size: 2vh;
-}
-
-.section-light {
-  background-color: #404040;
-  color: white;
-  text-align: center;
-}
-
-.section-dark {
-  background-color: #282e34;
-  color: #ddd;
-}
-
-.ptext {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 27px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-.ptext2 {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 40px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-.ptext1 {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: red;
-  font-size: 30px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  background-color: white;
-}
-
-.ptext .border {
-  background-color: #111;
-  color: #fff;
+.contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: black;
   padding: 20px;
+  border-radius: 10px;
 }
 
-.ptext .border1 {
-  border-style: solid;
-  background-color: #800000;
-  color: #fff;
-  padding: 20px;
+.contact-container h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
 }
 
-.ptext .border.trans {
-  background-color: transparent;
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  font-size: 23px;
+}
+
+button[type="submit"] {
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: gray;
+}
+
+.social-media-links {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.email-icon {
+  max-width: 50px;
+  margin-right: 10px;
+  margin-bottom: 13px;
+}
+
+.facebook-icon {
+  max-width: 50px;
+  margin-right: 10px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+}
+
+.social-media-links p {
+  color: whitesmoke;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.email-icon:hover,
+.facebook-icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /* FOOTER */
+footer {
+  background-color: #333;
+  color: whitesmoke;
+  text-align: center;
+}
+
+footer .nav-links li {
+  display: inline;
+  margin: 20px;
+}
+
+.footer-icons {
+  margin-top: 5px;
+}
+
+.footer-icon {
+  font-size: 50px;
+  color: whitesmoke;
+  margin: 20px;
+}
+
+.footer-content p {
+  margin-top: 5px;
+  font-size: 20px;
+  text-align: center;
+}

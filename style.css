@@ -524,6 +524,7 @@ button[type="submit"]:hover {
   color: whitesmoke;
   font-weight: 300;
   font-size: 20px;
+  cursor: default;
 }
 
 .email-icon:hover,
@@ -558,4 +559,5 @@ footer .nav-links li {
   margin-top: 5px;
   font-size: 20px;
   text-align: center;
+  cursor: default;
 }

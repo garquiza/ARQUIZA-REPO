@@ -393,6 +393,7 @@ a:hover {
 /* EXPERIENCE */
 .article-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   line-height: 0;
 }

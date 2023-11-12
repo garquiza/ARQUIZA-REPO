@@ -31,3 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Form submitted!");
   });
 });
+
+const arrowIcon = document.querySelector(".arrow");
+arrowIcon.addEventListener("click", () => {
+  smoothScroll("#about");
+});

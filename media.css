@@ -1,4 +1,9 @@
 @media screen and (max-width: 1200px) {
+  .pimg1 {
+    background-image: url("../assets/image6.jpg");
+    min-height: 50%;
+  }
+
   #desktop-nav {
     display: none;
   }
@@ -18,6 +23,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .ptext1 {
+    top: 30%;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .ptext2 {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
 
   .section__text h2 {
     font-size: 100%;

@@ -175,7 +175,7 @@ a:hover {
 /* BACKGROUND PICTURES */
 .pimg1 {
   background-image: url("../assets/image1.jpg");
-  min-height: 100%;
+  min-height: 600px;
 }
 
 .pimg2 {
